@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 
@@ -20,21 +21,38 @@ namespace Labb_3
 
         private void btnBoka_Click(object sender, RoutedEventArgs e)
         {
-            if (txtNamn.Text != "" || dtpDatum.Text != "")
+            if (txtNamn.Text != "")
             {
-                Bokningar.Bokning nyBokning = new Bokningar.Bokning(txtNamn.Text, dtpDatum.Text, cmbTid.Text, Convert.ToInt32(cmbBord.Text));
-                if (new Metoder().isFörMångaBokningar(bokningar, nyBokning) == false)
+                if (dtpDatum.Text != "")
                 {
-                    bokningar.Add(nyBokning);
-                    using (StreamWriter sw = new StreamWriter("Bokningslista.txt", true))
+                    var namnCheck = new Regex(@"^[A-Öa-ö .]{1,30}$");
+                    if (namnCheck.IsMatch(txtNamn.Text))
                     {
-                        sw.WriteLine(nyBokning.SparaInfo());
+                        Bokningar.Bokning nyBokning = new Bokningar.Bokning(txtNamn.Text, dtpDatum.Text, cmbTid.Text, Convert.ToInt32(cmbBord.Text));
+                        if (new Metoder().isFörMångaBokningar(bokningar, nyBokning) == false)
+                        {
+                            bokningar.Add(nyBokning);
+                            using (StreamWriter sw = new StreamWriter("Bokningslista.txt", true))
+                            {
+                                sw.WriteLine(nyBokning.SparaInfo());
+                            }
+                        }
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Bara bokstäver godtas i namnfältet.");
                     }
                 }
+                else
+                {
+                    MessageBox.Show("Datumet är inte valt!");
+                }
+
             }
             else
             {
-                MessageBox.Show("Alla fälten måste vara ifyllda!");
+                MessageBox.Show("Namnfältet är inte ifyllt!");
             }
         }
 
