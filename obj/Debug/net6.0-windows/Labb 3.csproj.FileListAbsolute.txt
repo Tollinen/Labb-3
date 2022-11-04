@@ -1,0 +1,21 @@
+C:\Users\adamt\OneDrive\Dokument\C#\Labb 3\Labb 3\bin\Debug\net6.0-windows\Labb 3.exe
+C:\Users\adamt\OneDrive\Dokument\C#\Labb 3\Labb 3\bin\Debug\net6.0-windows\Labb 3.deps.json
+C:\Users\adamt\OneDrive\Dokument\C#\Labb 3\Labb 3\bin\Debug\net6.0-windows\Labb 3.runtimeconfig.json
+C:\Users\adamt\OneDrive\Dokument\C#\Labb 3\Labb 3\bin\Debug\net6.0-windows\Labb 3.dll
+C:\Users\adamt\OneDrive\Dokument\C#\Labb 3\Labb 3\bin\Debug\net6.0-windows\Labb 3.pdb
+C:\Users\adamt\OneDrive\Dokument\C#\Labb 3\Labb 3\obj\Debug\net6.0-windows\Labb 3.csproj.AssemblyReference.cache
+C:\Users\adamt\OneDrive\Dokument\C#\Labb 3\Labb 3\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\adamt\OneDrive\Dokument\C#\Labb 3\Labb 3\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\adamt\OneDrive\Dokument\C#\Labb 3\Labb 3\obj\Debug\net6.0-windows\Labb 3_MarkupCompile.cache
+C:\Users\adamt\OneDrive\Dokument\C#\Labb 3\Labb 3\obj\Debug\net6.0-windows\Labb 3_MarkupCompile.lref
+C:\Users\adamt\OneDrive\Dokument\C#\Labb 3\Labb 3\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\adamt\OneDrive\Dokument\C#\Labb 3\Labb 3\obj\Debug\net6.0-windows\Labb 3.g.resources
+C:\Users\adamt\OneDrive\Dokument\C#\Labb 3\Labb 3\obj\Debug\net6.0-windows\Labb 3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adamt\OneDrive\Dokument\C#\Labb 3\Labb 3\obj\Debug\net6.0-windows\Labb 3.AssemblyInfoInputs.cache
+C:\Users\adamt\OneDrive\Dokument\C#\Labb 3\Labb 3\obj\Debug\net6.0-windows\Labb 3.AssemblyInfo.cs
+C:\Users\adamt\OneDrive\Dokument\C#\Labb 3\Labb 3\obj\Debug\net6.0-windows\Labb 3.csproj.CoreCompileInputs.cache
+C:\Users\adamt\OneDrive\Dokument\C#\Labb 3\Labb 3\obj\Debug\net6.0-windows\Labb 3.dll
+C:\Users\adamt\OneDrive\Dokument\C#\Labb 3\Labb 3\obj\Debug\net6.0-windows\refint\Labb 3.dll
+C:\Users\adamt\OneDrive\Dokument\C#\Labb 3\Labb 3\obj\Debug\net6.0-windows\Labb 3.pdb
+C:\Users\adamt\OneDrive\Dokument\C#\Labb 3\Labb 3\obj\Debug\net6.0-windows\Labb 3.genruntimeconfig.cache
+C:\Users\adamt\OneDrive\Dokument\C#\Labb 3\Labb 3\obj\Debug\net6.0-windows\ref\Labb 3.dll

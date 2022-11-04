@@ -1,0 +1,77 @@
+﻿<Window x:Class="Labb_3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Labb_3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <ListBox x:Name="lbxBokade" Grid.Column="1" Width="auto" Height="auto" Margin="0,23,0,21" Grid.Row="1" Grid.RowSpan="11">
+        </ListBox>
+
+        <Label Content="Bokningslista" Grid.Column="1" Grid.Row="1" MinWidth="50" MinHeight="30" FontSize="12"/>
+        <Label Content="Namn" Grid.Column="3" Grid.Row="2" MinWidth="50" MinHeight="25" FontSize="12"/>
+        <Label Content="Datum" Grid.Column="5" Grid.Row="2" MinWidth="50" MinHeight="25" FontSize="12"/>
+        <Label Content="Tid" Grid.Column="3" Grid.Row="5" MinWidth="50" MinHeight="25" FontSize="12"/>
+        <Label Content="Bord" Grid.Column="5" Grid.Row="5" MinWidth="50" MinHeight="25" FontSize="12"/>
+
+
+
+        <TextBox x:Name="txtNamn" Grid.Column="3" Grid.Row="3"/>
+        <DatePicker Name="dtpDatum" Grid.Column="5" Grid.Row="3"/>
+        <ComboBox x:Name="cmbTid" Grid.Column="3" Grid.Row="6" SelectedIndex="0">
+            <ComboBoxItem Content="15:00"/>
+            <ComboBoxItem Content="16:00"/>
+            <ComboBoxItem Content="17:00"/>
+            <ComboBoxItem Content="18:00"/>
+            <ComboBoxItem Content="19:00"/>
+            <ComboBoxItem Content="20:00"/>
+            <ComboBoxItem Content="21:00"/>
+            <ComboBoxItem Content="22:00"/>
+        </ComboBox>
+        <ComboBox x:Name="cmbBord" Grid.Column="5" Grid.Row="6" SelectedIndex="0">
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+            <ComboBoxItem Content="6"/>
+            <ComboBoxItem Content="7"/>
+            <ComboBoxItem Content="8"/>
+        </ComboBox>
+        <Button x:Name="btnBoka" Content="Boka" Grid.Column="3" Grid.ColumnSpan="3" Grid.Row="8" MaxHeight="50" MaxWidth="250" Click="btnBoka_Click"/>
+        <Button x:Name="btnLäsIn" Content="Visa Bokningar" Grid.Column="3" Grid.Row="10" MaxHeight="50" MaxWidth="250" Click="btnLäsIn_Click"/>
+        <Button x:Name="btnAvboka" Content="Avboka" Grid.Column="5" Grid.Row="10" MaxHeight="50" MaxWidth="250" Click="btnAvboka_Click"/>
+
+
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition MaxWidth="20"/>
+            <ColumnDefinition MaxWidth="250"/>
+            <ColumnDefinition MaxWidth="40"/>
+            <ColumnDefinition MaxWidth="105"/>
+            <ColumnDefinition MaxWidth="20"/>
+            <ColumnDefinition MaxWidth="105"/>
+            <ColumnDefinition MaxWidth="20"/>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition MaxHeight="20"/>
+            <RowDefinition MaxHeight="25"/>
+            <RowDefinition MaxHeight="25"/>
+            <RowDefinition MaxHeight="25"/>
+            <RowDefinition MaxHeight="10"/>
+            <RowDefinition MaxHeight="25"/>
+            <RowDefinition MaxHeight="25"/>
+            <RowDefinition MaxHeight="20"/>
+            <RowDefinition MaxHeight="30"/>
+            <RowDefinition MaxHeight="50"/>
+            <RowDefinition MaxHeight="40"/>
+
+            <RowDefinition MaxHeight="400"/>
+            <RowDefinition MaxHeight="20"/>
+        </Grid.RowDefinitions>
+    </Grid>
+</Window>
