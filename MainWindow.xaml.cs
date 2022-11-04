@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
@@ -41,7 +42,14 @@ namespace Labb_3
                     }
                     else
                     {
-                        MessageBox.Show("Bara bokstäver godtas i namnfältet.");
+                        if (txtNamn.Text.Count() >= 30)
+                        {
+                            MessageBox.Show("Namnet är för långt. Max 30 bokstäver.");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Bara bokstäver godtas i namnfältet.");
+                        }
                     }
                 }
                 else
